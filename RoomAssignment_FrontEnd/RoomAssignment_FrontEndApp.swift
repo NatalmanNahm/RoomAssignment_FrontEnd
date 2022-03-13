@@ -11,7 +11,7 @@ import SwiftUI
 struct RoomAssignment_FrontEndApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            SignInView()
         }
     }
 }
