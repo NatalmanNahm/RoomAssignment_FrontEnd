@@ -17,5 +17,20 @@ class ApiCall{
             debugPrint("Response: \(response)")
         }
     }
+    
+    static func logInUser(username: String, password: String) {
+        print("Signing in...")
+        let parameters: Parameters = ["username": username, "password": password]
+        AF.request("http://127.0.0.1:5000/login", method: .post, parameters: parameters).responseJSON {
+            response in
+            debugPrint("Response: \(response)")
+        }
+    }
+    
+    static func something() {
+        
+    }
+    
+    
 }
 

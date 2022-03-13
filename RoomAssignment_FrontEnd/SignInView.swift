@@ -32,6 +32,7 @@ struct SignInView: View {
                 .cornerRadius(10.0)
             
             Button(action: {
+                ApiCall.logInUser(username: username, password: password)
                 showingProfileSheet.toggle()
             }) {
               Text("Sign In")
