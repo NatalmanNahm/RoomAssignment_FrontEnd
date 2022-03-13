@@ -57,6 +57,7 @@ struct SignUpView: View {
                 .cornerRadius(10.0)
             
             Button(action: {
+                ApiCall.signUpUser(username: username, name: name, password: password, phoneNumber: phoneNumber, email: email, address: address)
                 showingProfileSheet.toggle()
             }) {
               Text("Create Account")
