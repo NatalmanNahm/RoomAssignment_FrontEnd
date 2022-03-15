@@ -10,10 +10,10 @@ import SwiftUI
 struct SignUpView: View {
     @State var email: String = ""
     @State var password: String = ""
-    @State var name: String = ""
-    @State var phoneNumber: String = ""
+    @State var firstName: String = ""
+    @State var lastName: String = ""
     @State var username: String = ""
-    @State var address: String = ""
+    @State var response: String = ""
     @State private var showingProfileSheet = false
     @State private var showingSignInSheet = false
     
@@ -31,7 +31,12 @@ struct SignUpView: View {
                 .background(Color.gray)
                 .cornerRadius(10.0)
             
-            TextField("Full Name", text: self.$name)
+            TextField("First Name", text: self.$firstName)
+                .padding(.all, 10)
+                .background(Color.gray)
+                .cornerRadius(10.0)
+            
+            TextField("Last Name", text: self.$lastName)
                 .padding(.all, 10)
                 .background(Color.gray)
                 .cornerRadius(10.0)
@@ -46,18 +51,13 @@ struct SignUpView: View {
                 .background(Color.gray)
                 .cornerRadius(10.0)
             
-            TextField("Phone Number", text: self.$phoneNumber)
-                .padding(.all, 10)
-                .background(Color.gray)
-                .cornerRadius(10.0)
-            
-            TextField("Address", text: self.$address)
-                .padding(.all, 10)
-                .background(Color.gray)
-                .cornerRadius(10.0)
-            
             Button(action: {
-                ApiCall.signUpUser(username: username, name: name, password: password, phoneNumber: phoneNumber, email: email, address: address)
+                DispatchQueue.main.async {
+                    if(!email.isEmpty && !firstName.isEmpty && !lastName.isEmpty && !password.isEmpty && !username.isEmpty){
+                        response = ApiCall.signUpUser(username: username, firstName: firstName, password: password, lastName: lastName, email: email)
+                    }
+                }
+                print("reponse: " + response)
                 showingProfileSheet.toggle()
             }) {
               Text("Create Account")
@@ -68,8 +68,9 @@ struct SignUpView: View {
                 .background(Color.green)
                 .cornerRadius(15.0)
             }
+            .frame(maxWidth: .infinity, alignment: .center)
             .fullScreenCover(isPresented: $showingProfileSheet, onDismiss: {}) {
-              ProfileView()
+              SignInView()
             }
             
             Button(action: {
@@ -83,6 +84,7 @@ struct SignUpView: View {
                 .background(Color.green)
                 .cornerRadius(15.0)
             }
+            .frame(maxWidth: .infinity, alignment: .center)
             .fullScreenCover(isPresented: $showingSignInSheet, onDismiss: {}) {
               SignInView()
             }
