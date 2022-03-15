@@ -21,7 +21,8 @@ class ApiCall{
             "lname": lastName,
             "email": email
           ]
-        AF.request("\(baseUrl)/signup", method: .post, parameters: parameters).responseJSON { response in
+        AF.request("\(baseUrl)/signup", method: .post, parameters: parameters, encoding:
+                    JSONEncoding.default).responseString{ response in
             debugPrint("Response: \(response)")
             requestResponse = "\(response)"
         }
@@ -31,7 +32,8 @@ class ApiCall{
     static func logInUser(username: String, password: String) {
         print("Signing in...")
         let parameters: Parameters = ["username": username, "password": password]
-        AF.request("\(baseUrl)/login", method: .post, parameters: parameters).responseJSON {
+        AF.request("\(baseUrl)/login", method: .post, parameters: parameters, encoding:
+                    JSONEncoding.default).responseJSON {
             response in
             debugPrint("Response: \(response)")
         }
