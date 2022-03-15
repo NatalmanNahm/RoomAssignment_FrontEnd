@@ -9,6 +9,16 @@
 /* Begin PBXBuildFile section */
 		5F5A7FC427DD850C00A64660 /* ApiCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5A7FC327DD850C00A64660 /* ApiCall.swift */; };
 		5F5A7FC727DD896600A64660 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 5F5A7FC627DD896600A64660 /* Alamofire */; };
+		5F5A7FC927DEB47900A64660 /* TasksListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5A7FC827DEB47800A64660 /* TasksListView.swift */; };
+		5F5A7FCC27DEB77A00A64660 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5A7FCB27DEB77900A64660 /* Task.swift */; };
+		5F5A7FCF27DECB4000A64660 /* TaskCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5A7FCE27DECB3F00A64660 /* TaskCard.swift */; };
+		5F5A7FD227DECC0500A64660 /* AddTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5A7FD127DECC0500A64660 /* AddTaskView.swift */; };
+		5F5A7FD427DFBC0F00A64660 /* TaskDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5A7FD327DFBC0F00A64660 /* TaskDetail.swift */; };
+		5F5A7FD627DFC24500A64660 /* NurseCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5A7FD527DFC24500A64660 /* NurseCard.swift */; };
+		5F5A7FD827DFC27A00A64660 /* Nurse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5A7FD727DFC27A00A64660 /* Nurse.swift */; };
+		5F5A7FDA27DFC74100A64660 /* NurseListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5A7FD927DFC74100A64660 /* NurseListView.swift */; };
+		5F5A7FDC27DFC9EA00A64660 /* NureDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5A7FDB27DFC9EA00A64660 /* NureDetailView.swift */; };
+		5F5A7FDE27DFD4DD00A64660 /* AssignTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5A7FDD27DFD4DD00A64660 /* AssignTaskView.swift */; };
 		5FC716AE27DD71F700172A28 /* RoomAssignment_FrontEndApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC716AD27DD71F700172A28 /* RoomAssignment_FrontEndApp.swift */; };
 		5FC716B027DD71F700172A28 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC716AF27DD71F700172A28 /* ContentView.swift */; };
 		5FC716B227DD71FA00172A28 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FC716B127DD71FA00172A28 /* Assets.xcassets */; };
@@ -20,6 +30,16 @@
 
 /* Begin PBXFileReference section */
 		5F5A7FC327DD850C00A64660 /* ApiCall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiCall.swift; sourceTree = "<group>"; };
+		5F5A7FC827DEB47800A64660 /* TasksListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksListView.swift; sourceTree = "<group>"; };
+		5F5A7FCB27DEB77900A64660 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		5F5A7FCE27DECB3F00A64660 /* TaskCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCard.swift; sourceTree = "<group>"; };
+		5F5A7FD127DECC0500A64660 /* AddTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskView.swift; sourceTree = "<group>"; };
+		5F5A7FD327DFBC0F00A64660 /* TaskDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskDetail.swift; sourceTree = "<group>"; };
+		5F5A7FD527DFC24500A64660 /* NurseCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NurseCard.swift; sourceTree = "<group>"; };
+		5F5A7FD727DFC27A00A64660 /* Nurse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nurse.swift; sourceTree = "<group>"; };
+		5F5A7FD927DFC74100A64660 /* NurseListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NurseListView.swift; sourceTree = "<group>"; };
+		5F5A7FDB27DFC9EA00A64660 /* NureDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NureDetailView.swift; sourceTree = "<group>"; };
+		5F5A7FDD27DFD4DD00A64660 /* AssignTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssignTaskView.swift; sourceTree = "<group>"; };
 		5FC716AA27DD71F700172A28 /* RoomAssignment_FrontEnd.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RoomAssignment_FrontEnd.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FC716AD27DD71F700172A28 /* RoomAssignment_FrontEndApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomAssignment_FrontEndApp.swift; sourceTree = "<group>"; };
 		5FC716AF27DD71F700172A28 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -42,6 +62,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5F5A7FCA27DEB75700A64660 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5F5A7FCB27DEB77900A64660 /* Task.swift */,
+				5F5A7FD727DFC27A00A64660 /* Nurse.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5F5A7FCD27DECB0600A64660 /* Cards */ = {
+			isa = PBXGroup;
+			children = (
+				5F5A7FCE27DECB3F00A64660 /* TaskCard.swift */,
+				5F5A7FD527DFC24500A64660 /* NurseCard.swift */,
+			);
+			path = Cards;
+			sourceTree = "<group>";
+		};
+		5F5A7FD027DECBE300A64660 /* DetailView */ = {
+			isa = PBXGroup;
+			children = (
+				5F5A7FD327DFBC0F00A64660 /* TaskDetail.swift */,
+				5F5A7FDB27DFC9EA00A64660 /* NureDetailView.swift */,
+			);
+			path = DetailView;
+			sourceTree = "<group>";
+		};
 		5FC716A127DD71F700172A28 = {
 			isa = PBXGroup;
 			children = (
@@ -61,6 +108,11 @@
 		5FC716AC27DD71F700172A28 /* RoomAssignment_FrontEnd */ = {
 			isa = PBXGroup;
 			children = (
+				5F5A7FDD27DFD4DD00A64660 /* AssignTaskView.swift */,
+				5F5A7FD127DECC0500A64660 /* AddTaskView.swift */,
+				5F5A7FD027DECBE300A64660 /* DetailView */,
+				5F5A7FCD27DECB0600A64660 /* Cards */,
+				5F5A7FCA27DEB75700A64660 /* Models */,
 				5FC716AD27DD71F700172A28 /* RoomAssignment_FrontEndApp.swift */,
 				5FC716AF27DD71F700172A28 /* ContentView.swift */,
 				5FC716B127DD71FA00172A28 /* Assets.xcassets */,
@@ -69,6 +121,8 @@
 				5FC716BF27DD759E00172A28 /* SignInView.swift */,
 				5FC716C127DD7E6600172A28 /* ProfileView.swift */,
 				5F5A7FC327DD850C00A64660 /* ApiCall.swift */,
+				5F5A7FC827DEB47800A64660 /* TasksListView.swift */,
+				5F5A7FD927DFC74100A64660 /* NurseListView.swift */,
 			);
 			path = RoomAssignment_FrontEnd;
 			sourceTree = "<group>";
@@ -157,12 +211,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F5A7FC927DEB47900A64660 /* TasksListView.swift in Sources */,
+				5F5A7FD627DFC24500A64660 /* NurseCard.swift in Sources */,
+				5F5A7FDE27DFD4DD00A64660 /* AssignTaskView.swift in Sources */,
+				5F5A7FDC27DFC9EA00A64660 /* NureDetailView.swift in Sources */,
 				5FC716B027DD71F700172A28 /* ContentView.swift in Sources */,
 				5FC716BE27DD74D000172A28 /* SignUpView.swift in Sources */,
 				5FC716C227DD7E6600172A28 /* ProfileView.swift in Sources */,
+				5F5A7FD227DECC0500A64660 /* AddTaskView.swift in Sources */,
+				5F5A7FDA27DFC74100A64660 /* NurseListView.swift in Sources */,
+				5F5A7FD427DFBC0F00A64660 /* TaskDetail.swift in Sources */,
+				5F5A7FCC27DEB77A00A64660 /* Task.swift in Sources */,
 				5FC716C027DD759E00172A28 /* SignInView.swift in Sources */,
+				5F5A7FCF27DECB4000A64660 /* TaskCard.swift in Sources */,
 				5F5A7FC427DD850C00A64660 /* ApiCall.swift in Sources */,
 				5FC716AE27DD71F700172A28 /* RoomAssignment_FrontEndApp.swift in Sources */,
+				5F5A7FD827DFC27A00A64660 /* Nurse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,6 +357,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"RoomAssignment_FrontEnd/Preview Content\"";
+				DEVELOPMENT_TEAM = X6WA7ACSKL;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -321,6 +386,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"RoomAssignment_FrontEnd/Preview Content\"";
+				DEVELOPMENT_TEAM = X6WA7ACSKL;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;

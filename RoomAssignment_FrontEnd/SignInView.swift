@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct SignInView: View {
-    @State var email: String = ""
+    @State var username: String = ""
     @State var password: String = ""
     @State private var showingProfileSheet = false
     @State private var showingSignUpSheet = false
@@ -21,7 +21,7 @@ struct SignInView: View {
             .padding([.top, .bottom], 20)
             .frame(maxWidth: .infinity, alignment: .center)
 
-            TextField("Email", text: self.$email)
+            TextField("Username", text: self.$username)
                 .padding(.all, 10)
                 .background(Color.gray)
                 .cornerRadius(10.0)

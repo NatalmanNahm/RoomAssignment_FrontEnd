@@ -10,18 +10,28 @@ import Alamofire
 
 
 class ApiCall{
-    static func signUpUser(username: String, name: String, password: String, phoneNumber: String, email: String, address: String){
+    static let baseUrl = "https://b9u0yq8uqh.execute-api.us-west-2.amazonaws.com/test"
+    static func signUpUser(username: String, firstName: String, password: String, lastName: String, email: String) -> String {
         print("Sending request")
-        let parameters: Parameters = ["username": username, "password": password, "staffname": name, "phonenumber": phoneNumber, "email": email, "address": address]
-        AF.request("http://127.0.0.1:5000/signup", method: .post, parameters: parameters).responseJSON { response in
+        var requestResponse = ""
+        let parameters: Parameters = [
+            "username": username,
+            "password": password,
+            "fname": firstName,
+            "lname": lastName,
+            "email": email
+          ]
+        AF.request("\(baseUrl)/signup", method: .post, parameters: parameters).responseJSON { response in
             debugPrint("Response: \(response)")
+            requestResponse = "\(response)"
         }
+        return requestResponse
     }
     
     static func logInUser(username: String, password: String) {
         print("Signing in...")
         let parameters: Parameters = ["username": username, "password": password]
-        AF.request("http://127.0.0.1:5000/login", method: .post, parameters: parameters).responseJSON {
+        AF.request("\(baseUrl)/login", method: .post, parameters: parameters).responseJSON {
             response in
             debugPrint("Response: \(response)")
         }
