@@ -9,9 +9,16 @@ import SwiftUI
 
 @main
 struct RoomAssignment_FrontEndApp: App {
+    let defaults = UserDefaults.standard
+    
     var body: some Scene {
         WindowGroup {
-            SignInView()
+            if ((defaults.object(forKey: "token") as? String) != nil) {
+                ProfileView()
+            } else {
+                SignInView()
+            }
+            
         }
     }
 }

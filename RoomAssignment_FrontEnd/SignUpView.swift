@@ -13,9 +13,11 @@ struct SignUpView: View {
     @State var firstName: String = ""
     @State var lastName: String = ""
     @State var username: String = ""
+    @State var age: String = ""
     @State var response: String = ""
     @State private var showingProfileSheet = false
     @State private var showingSignInSheet = false
+    @State var checkState:Bool = false ;
     
     var body: some View {
         VStack(alignment: .leading, spacing: 15) {
@@ -40,6 +42,10 @@ struct SignUpView: View {
                 .padding(.all, 10)
                 .background(Color.gray)
                 .cornerRadius(10.0)
+            TextField("Age", text: self.$age)
+                .padding(.all, 10)
+                .background(Color.gray)
+                .cornerRadius(10.0)
             
             TextField("Username", text: self.$username)
                 .padding(.all, 10)
@@ -54,7 +60,7 @@ struct SignUpView: View {
             Button(action: {
                 DispatchQueue.main.async {
                     if(!email.isEmpty && !firstName.isEmpty && !lastName.isEmpty && !password.isEmpty && !username.isEmpty){
-                        response = ApiCall.signUpUser(username: username, firstName: firstName, password: password, lastName: lastName, email: email)
+                        response = ApiCall.signUpUser(username: username, firstName: firstName, password: password, lastName: lastName, email: email, age: Int(age)!)
                     }
                 }
                 print("reponse: " + response)

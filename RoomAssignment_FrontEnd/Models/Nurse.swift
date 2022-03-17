@@ -9,15 +9,17 @@ import Foundation
 import SwiftUI
 
 class Nurse: Identifiable, ObservableObject{
-    @Published var id: Int
-    @Published var name: String
-    @Published var completedTask: Int
-    @Published var uncompletedTask: Int
+    @Published var id: String
+    @Published var firstName: String
+    @Published var lastName: String
+    @Published var email: String
+    @Published var age: Int
     
-    init(id: Int, name: String, completedTask: Int, uncompletedTask: Int){
+    init(id: String, firstName: String, lastName: String, email: String, age: Int){
         self.id = id
-        self.name = name
-        self.completedTask = completedTask
-        self.uncompletedTask = uncompletedTask
+        self.lastName = lastName
+        self.firstName = firstName
+        self.email = email
+        self.age = age
     }
 }
