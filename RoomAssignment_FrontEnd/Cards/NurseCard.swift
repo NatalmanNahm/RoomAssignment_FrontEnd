@@ -10,19 +10,21 @@ import SwiftUI
 struct NurseCard: View {
     @State var nurse: Nurse
     var body: some View {
-        NavigationLink(destination: TaskDetail(), label: {
+        NavigationLink(destination: Text("Nurses"), label: {
             VStack{
-                Text(nurse.name)
-                    .bold()
-                    .font(.system(size: 22))
-                    .foregroundColor(Color.black)
-                    .frame(maxWidth: .infinity, alignment: .leading)
-                    .padding(.vertical, 10)
-                    .padding(.horizontal)
+                Group{
+                    Text(nurse.firstName).bold().font(.system(size: 22))
+                        .foregroundColor(Color.black) +
+                    Text(nurse.lastName).bold().font(.system(size: 22))
+                        .foregroundColor(Color.black)
+                }
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .padding(.vertical, 10)
+                .padding(.horizontal)
                 HStack{
-                    Text("Completed Task: ")
+                    Text("email: ")
                         .font(.system(size: 18))
-                    Text("\(nurse.completedTask)")
+                    Text("\(nurse.email)")
                         .font(.system(size: 18))
                 }
                 .foregroundColor(Color.black)
@@ -31,9 +33,9 @@ struct NurseCard: View {
                 .padding(.bottom, 0.3)
                 
                 HStack{
-                    Text("Uncompleted Task: ")
+                    Text("Age: ")
                         .font(.system(size: 18))
-                    Text("\(nurse.completedTask)")
+                    Text("\(nurse.age)")
                         .font(.system(size: 18))
                 }
                 .foregroundColor(Color.black)
@@ -51,6 +53,6 @@ struct NurseCard: View {
 
 struct NurseCard_Previews: PreviewProvider {
     static var previews: some View {
-        NurseCard(nurse: Nurse(id: 23, name: "That lady", completedTask: 3, uncompletedTask: 7))
+        NurseCard(nurse: Nurse(id: "uuuhjs", firstName: "natalman", lastName: "Nahm", email: "natalnahm@gmail.com", age: 77))
     }
 }

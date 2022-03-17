@@ -19,6 +19,7 @@
 		5F5A7FDA27DFC74100A64660 /* NurseListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5A7FD927DFC74100A64660 /* NurseListView.swift */; };
 		5F5A7FDC27DFC9EA00A64660 /* NureDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5A7FDB27DFC9EA00A64660 /* NureDetailView.swift */; };
 		5F5A7FDE27DFD4DD00A64660 /* AssignTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5A7FDD27DFD4DD00A64660 /* AssignTaskView.swift */; };
+		5FB3957627E2A69F002CB095 /* EditUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB3957527E2A69F002CB095 /* EditUser.swift */; };
 		5FC716AE27DD71F700172A28 /* RoomAssignment_FrontEndApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC716AD27DD71F700172A28 /* RoomAssignment_FrontEndApp.swift */; };
 		5FC716B027DD71F700172A28 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC716AF27DD71F700172A28 /* ContentView.swift */; };
 		5FC716B227DD71FA00172A28 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FC716B127DD71FA00172A28 /* Assets.xcassets */; };
@@ -40,6 +41,7 @@
 		5F5A7FD927DFC74100A64660 /* NurseListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NurseListView.swift; sourceTree = "<group>"; };
 		5F5A7FDB27DFC9EA00A64660 /* NureDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NureDetailView.swift; sourceTree = "<group>"; };
 		5F5A7FDD27DFD4DD00A64660 /* AssignTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssignTaskView.swift; sourceTree = "<group>"; };
+		5FB3957527E2A69F002CB095 /* EditUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditUser.swift; sourceTree = "<group>"; };
 		5FC716AA27DD71F700172A28 /* RoomAssignment_FrontEnd.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RoomAssignment_FrontEnd.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FC716AD27DD71F700172A28 /* RoomAssignment_FrontEndApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomAssignment_FrontEndApp.swift; sourceTree = "<group>"; };
 		5FC716AF27DD71F700172A28 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -92,6 +94,7 @@
 		5FC716A127DD71F700172A28 = {
 			isa = PBXGroup;
 			children = (
+				5FB3957527E2A69F002CB095 /* EditUser.swift */,
 				5FC716AC27DD71F700172A28 /* RoomAssignment_FrontEnd */,
 				5FC716AB27DD71F700172A28 /* Products */,
 			);
@@ -221,6 +224,7 @@
 				5F5A7FD227DECC0500A64660 /* AddTaskView.swift in Sources */,
 				5F5A7FDA27DFC74100A64660 /* NurseListView.swift in Sources */,
 				5F5A7FD427DFBC0F00A64660 /* TaskDetail.swift in Sources */,
+				5FB3957627E2A69F002CB095 /* EditUser.swift in Sources */,
 				5F5A7FCC27DEB77A00A64660 /* Task.swift in Sources */,
 				5FC716C027DD759E00172A28 /* SignInView.swift in Sources */,
 				5F5A7FCF27DECB4000A64660 /* TaskCard.swift in Sources */,

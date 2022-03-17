@@ -12,11 +12,10 @@ struct NureDetailView: View {
     @State var phoneNumber: String = ""
     @State var email: String = ""
     @State var task = [
-        Task(id: 1, title: "New Task", description: "It's just a task"),
-        Task(id: 2, title: "New Task", description: "It's just a task"),
-        Task(id: 3, title: "New Task", description: "It's just a task"),
-        Task(id: 4, title: "New Task", description: "It's just a task"),
-        Task(id: 5, title: "New Task", description: "It's just a task")
+        Task(id: "674477", title: "Make Bed", timeToComplete: 3.5, roomNumber: 200, isCompleted: false),
+        Task(id: "674477", title: "Make Bed", timeToComplete: 3.5, roomNumber: 200, isCompleted: false),
+        Task(id: "674477", title: "Make Bed", timeToComplete: 3.5, roomNumber: 200, isCompleted: false),
+        Task(id: "674477", title: "Make Bed", timeToComplete: 3.5, roomNumber: 200, isCompleted: false),
     ]
     
     
@@ -30,7 +29,7 @@ struct NureDetailView: View {
             }
             LazyVStack(alignment: .leading, spacing: 0){
                 ForEach(self.task.indices, id: \.self) {index in
-                    JustTaskCard(task: task[index])
+//                    JustTaskCard(task: task[index])
                 }
             }
             

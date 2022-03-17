@@ -32,7 +32,9 @@ struct SignInView: View {
                 .cornerRadius(10.0)
             
             Button(action: {
-                ApiCall.logInUser(username: username, password: password)
+                DispatchQueue.main.async {
+                    ApiCall.logInUser(username: username, password: password)
+                }
                 showingProfileSheet.toggle()
             }) {
               Text("Sign In")
@@ -44,8 +46,9 @@ struct SignInView: View {
                 .cornerRadius(15.0)
             }
             .fullScreenCover(isPresented: $showingProfileSheet, onDismiss: {}) {
-              ProfileView()
+                ProfileView(username: username)
             }
+            .frame(maxWidth: .infinity, alignment: .center)
             
             Button(action: {
                 showingSignUpSheet.toggle()
@@ -58,6 +61,7 @@ struct SignInView: View {
                 .background(Color.green)
                 .cornerRadius(15.0)
             }
+            .frame(maxWidth: .infinity, alignment: .center)
             .fullScreenCover(isPresented: $showingSignUpSheet, onDismiss: {}) {
               SignUpView()
             }

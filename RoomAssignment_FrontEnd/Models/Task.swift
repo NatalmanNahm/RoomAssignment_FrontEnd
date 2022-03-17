@@ -9,14 +9,18 @@ import Foundation
 import SwiftUI
 
 class Task: Identifiable, ObservableObject{
-    @Published var id: Int
+    @Published var id: String
     @Published var title: String
-    @Published var description: String
+    @Published var timeToComplete: Float
+    @Published var roomNumber: Int
+    @Published var isCompleted: Bool
     
-    init(id: Int, title: String, description: String){
+    init(id: String, title: String, timeToComplete: Float, roomNumber: Int, isCompleted: Bool){
         self.id = id
         self.title = title
-        self.description = description
+        self.timeToComplete = timeToComplete
+        self.roomNumber = roomNumber
+        self.isCompleted = isCompleted
     }
 }
 
